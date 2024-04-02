@@ -1,0 +1,268 @@
+body #pagetitle {
+    background-image: url(http://demo.casethemes.net/consultio/wp-content/uploads/2019/11/bg-page-title.jpg);
+    
+}
+
+.h-item-meta{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1199px){
+#ct-header-wrap .ct-header-branding a.logo-mobile {
+    opacity: 1;
+    position: static;
+}}
+
+#ct-header-wrap .ct-header-branding .logo-light, #ct-header-wrap .ct-header-branding .logo-mobile {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translate(0%, -50%);
+    -khtml-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    opacity: 0;
+}
+
+a, a:hover, a:focus, a:before, a:after {
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    /* color: #007bff; */
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body.body-default-font {
+    font-family: roboto, sans-serif;
+}
+
+#ct-header-wrap #ct-header-top.ct-header-top1 {
+    background-color: #383838;
+    padding: 11px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1199px){
+#ct-header-wrap .ct-header-branding img {
+    max-height: 50px;
+}
+.nav-contact-info{
+    display: none;
+}
+#menu-button-icon{
+    display: block;
+}
+}
+@media screen and (min-width: 1199px) {
+    .nav-contact-info{
+        display: block;
+    }
+    #menu-button-icon{
+        display: none;
+    }
+}
+
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.nav-logo-image{
+    height: 3rem;
+    width: 12rem;
+}
+
+@media screen and (max-width: 767px){
+    #ct-header-top{
+        display: none;
+    }
+    .law{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 1199px){
+#pagetitle {
+    padding: 115px 0;
+    
+}}
+#pagetitle:before {
+    z-index: -1;
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#pagetitle {
+    background-color: #333;
+    padding-bottom: 116px;
+    padding-top: 167px;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+}
+.text-center, .align-center {
+    text-align: center;
+}
+.bg-image {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    
+}
+.text-center {
+    text-align: center !important;
+}
+
+body.body-default-font {
+    font-family: roboto, sans-serif;
+}
+
+
+
+/* cards list */
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card-body-overlay {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(100%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card-img-top {
+    transform: translateY(0px);
+}
+
+.card:hover .card-body-overlay {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+  .client-section {
+    background-color: #f8f9fa; /* Example background color */
+    padding: 50px 0; /* Example padding */
+    font-family: Arial, sans-serif; /* Example font family */
+}
+
+.client-slide {
+    text-align: center;
+    margin: 0 15px; 
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Establish positioning context */
+}
+
+.client-image img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.client-slide:hover .client-image img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* CSS for the close icon */
+/* .open-menu {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .open-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+
+  .open-menu span:before,
+  .open-menu span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: transform 0.3s;
+  }
+
+  .open-menu span:before {
+    top: -8px;
+  }
+
+  .open-menu span:after {
+    bottom: -8px;
+  }
+
+  
+  .close-menu span {
+    transform: rotate(45deg);
+  }
+
+  .close-menu span:before {
+    transform: rotate(-90deg) translateY(8px);
+  }
+
+  .close-menu span:after {
+    transform: rotate(90deg) translateY(-8px);
+  } */
