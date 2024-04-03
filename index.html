@@ -42,10 +42,9 @@
     />
   </head>
 
-  <!-- theme-csuti woocommerce-js redux-page site-h1 body-default-font heading-default-font header-sticky btn-type-gradient fixed-footer mobile-header-light site-404-default elementor-default elementor-kit-3957 elementor-page elementor-page-409 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit -->
-
-  <body class="page-template-default fixed-footer" id="page-409">
-    <div id="page footer-fixed">
+  
+  <body class="page-template-default" id="page-409">
+    <div id="page footer-fixed" class="main-container">
       <!-- <div id="ct-loadding" class="ct-loader style5" style="display: none;">
             <div class="ct-spinner5">
                 <div class="bounce1"></div>
@@ -240,35 +239,39 @@
       <header>
         <div id="pagetitle" class="page-title bg-image text-center">
           <div class="container">
-            <div class="page-title-inner">
-              <div class="page-title-holder">
-                <h1 class="page-title">Services</h1>
+            <div class="page-title-inner ">
+              <div class="page-title-holder text-center">
+                <h1 class="page-title ">&nbsp; Services</h1>
               </div>
-              <ul class="ct-breadcrumb">
+              <ul class="ct-breadcrumb ">
                 <li>
                   <a
-                    class="breadcrumb-entry"
-                    href="https://demo.casethemes.net/consultio/"
-                    >Home</a
+                    class=""
+                    href="#"
+                    >Home -</a
                   >
                 </li>
                 <li>
-                  <span class="breadcrumb-entry">Services v.2</span>
+                  <span class="breadcrumb-entry">&nbsp; Services v.2</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </header>
-
-      <section class="container pt-5 pb-5 py-5">
+      <div style="background-color: white;">
+      <section  class="container pt-5 pb-5 py-5">
         <div class="row">
           <div class="col-md-6">
             <div
-              class="ct-heading h-align- sub-style1 ct-heading-left item-st-default"
+              class="ct-heading"
             >
               <div class="ct-item--inner">
-                <div class="item--sub-title style1 show-line">Services</div>
+                
+                    <div class="item--sub-title style1 "> 
+                      
+                      Services</div>
+                 
                 <h3
                   class="item--title st-default case-animate-time"
                   data-wow-delay="ms"
@@ -281,28 +284,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="elementor-widget-container">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-76dfc09b elementor-widget elementor-widget-text-editor"
-                  data-id="76dfc09b"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
+          <div class="col-md-6 pt-4">
+            
+                  <div class="">
                     Easily apply to multiple jobs with one click! Quick Apply
                     shows you recommended jobs based off your most recent search
                     and allows you to apply to 25+ jobs in a matter of seconds!
                   </div>
-                </div>
-              </div>
-            </div>
+                
           </div>
         </div>
       </section>
 
-      <section class="container pb-5 pt-5">
+      <section  class="container pb-5 pt-5">
         <div class="row">
           <div class="col">
             <div class="ct-grid ct-service-grid2">
@@ -743,7 +737,7 @@
       </section>
 
       <section
-        class="mb-5 mt-5"
+        class="pb-5 pt-5"
         data-id="6a50ed4"
         data-element_type="section"
       >
@@ -797,7 +791,7 @@
                       </a>
                     </div>
                   </div>
-                  <!-- Add more slides as needed -->
+                  
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -807,9 +801,11 @@
         </div>
       </section>
 
+    </div>
+
       <footer
         id="colophon"
-        class="position-relative footer-fixed site-footer-custom bg-dark text-white pt-5 mb-5"
+        class=" footer-container sticky-bottom  site-footer-custom bg-dark text-white pt-5 pb-5"
       >
         <div class="footer-custom-inner">
           <div class="container">
@@ -998,7 +994,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
+    <!-- <script>
       function toggleMenu() {
         var menuButton = document.querySelector(".btn-nav-mobile");
         menuButton.classList.toggle("close-menu");
@@ -1012,6 +1008,6 @@
           clickable: true,
         },
       });
-    </script>
+    </script> -->
   </body>
 </html>
