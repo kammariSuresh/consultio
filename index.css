@@ -1,3 +1,10 @@
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+}
+body.body-default-font {
+    font-family: roboto, sans-serif;
+}
 body #pagetitle {
     background-image: url(http://demo.casethemes.net/consultio/wp-content/uploads/2019/11/bg-page-title.jpg);
     
@@ -8,11 +15,56 @@ body #pagetitle {
     flex-direction: column;
 }
 
+.ct-heading .item--sub-title {
+    color: #0e0e0e;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.ct-heading .item--sub-title.style1 {
+    padding-left: 75px;
+    position: relative;
+}
+.ct-heading .item--sub-title {
+    font-weight: 600;
+    display: inline-block;
+    color: #0e0e0e;
+    font-family: poppins, sans-serif;
+}
+.ct-heading .item--sub-title.show-line:before {
+    opacity: 1;
+}
+
+.ct-heading .item--sub-title.style1:before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #d1651a;
+    box-shadow: 0 7px 16px rgba(12,12,12,.22);
+}
+
+.sticky-bottom{
+    z-index: -999 !important;
+}
+.footer-container{
+    
+    z-index: 1;
+}
+
 @media screen and (max-width: 1199px){
 #ct-header-wrap .ct-header-branding a.logo-mobile {
     opacity: 1;
     position: static;
-}}
+}
+.sticky-bottom{
+    position: static !important;
+    
+}
+}
 
 #ct-header-wrap .ct-header-branding .logo-light, #ct-header-wrap .ct-header-branding .logo-mobile {
     position: absolute;
@@ -33,21 +85,13 @@ a, a:hover, a:focus, a:before, a:after {
 }
 
 a {
-    /* color: #007bff; */
+    
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 
-body.body-default-font {
-    font-family: roboto, sans-serif;
-}
+
 
 #ct-header-wrap #ct-header-top.ct-header-top1 {
     background-color: #383838;
@@ -82,11 +126,10 @@ img {
     width: auto;
     max-width: 100%;
     height: auto;
-}
-img {
     vertical-align: middle;
     border-style: none;
 }
+
 .nav-logo-image{
     height: 3rem;
     width: 12rem;
@@ -115,13 +158,31 @@ img {
     width: 100%;
     height: 100%;
 }
-#pagetitle {
+#pagetitle  {
     background-color: #333;
     padding-bottom: 116px;
     padding-top: 167px;
     text-align: center;
     position: relative;
     z-index: -2;
+    color: #fff;
+}
+
+.page-title-inner a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+}
+.ct-breadcrumb{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page-title{
+    font-weight: 700;
 }
 .text-center, .align-center {
     text-align: center;
@@ -136,9 +197,7 @@ img {
     text-align: center !important;
 }
 
-body.body-default-font {
-    font-family: roboto, sans-serif;
-}
+
 
 
 
