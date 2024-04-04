@@ -647,10 +647,10 @@
                 <swiper-container
         class="mySwiper pb-3"
         navigation="false"
-        space-between="10"
-        centered-slides="true"
+        space-between="20"
+        
         autoplay-delay="1500"
-        slides-per-view="3"
+        
         free-mode="true"
         autoplay-disable-on-interaction="false"
         class="container"
@@ -963,12 +963,16 @@
     <script>
       const swiperEl = document.querySelector('swiper-container')
       Object.assign(swiperEl, {
-        slidesPerView: 2,
+        slidesPerView: 5,
         spaceBetween: 10,
         
         breakpoints: {
-          640: {
+          200:{
             slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           768: {
@@ -976,7 +980,7 @@
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 50,
           },
         },
