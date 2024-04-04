@@ -645,12 +645,9 @@
             <div class="row">
               <div class="col-12">
                 <swiper-container
-        class="mySwiper"
-        pagination="true"
-        pagination-clickable="true"
+        class="mySwiper pb-3"
         navigation="false"
-        space-between="0"
-        
+        space-between="10"
         centered-slides="true"
         autoplay-delay="1500"
         slides-per-view="3"
@@ -658,29 +655,34 @@
         autoplay-disable-on-interaction="false"
         class="container"
       >
-        <swiper-slide class="images-container pb-4">
+        <swiper-slide class="images-container pb-3">
           <a href="#">
             <img class="img-hov" loading="lazy" decoding="async" width="170" height="35" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/11/client-04.png" class="ct-thumb-1 attachment-full" alt="">
           </a>
         </swiper-slide>
-        <swiper-slide class="images-container pb-4">
+        <swiper-slide class="images-container pb-3">
           <a href="#">
             <img class="img-hov" loading="lazy" decoding="async" width="196" height="36" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/12/client-05.png" class="ct-thumb-1 attachment-full" alt="">
           </a>
         </swiper-slide>
-        <swiper-slide class="images-container pb-4">
+        <swiper-slide class="images-container pb-3">
           <a href="#">
             <img class="img-hov" loading="lazy" decoding="async" width="169" height="35" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/11/client-01.png" class="ct-thumb-1 attachment-full" alt="">
           </a>
         </swiper-slide>
-        <swiper-slide class="images-container pb-4">
+        <swiper-slide class="images-container pb-3">
           <a href="#">
             <img class="img-hov" loading="lazy" decoding="async" width="143" height="42" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/11/client-02.png" class="ct-thumb-1 attachment-full" alt="">
           </a>
         </swiper-slide>
-        <swiper-slide class="images-container pb-4">
+        <swiper-slide class="images-container pb-3">
           <a href="#">
             <img class="img-hov" loading="lazy" decoding="async" width="166" height="38" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/11/client-03.png" class="ct-thumb-1 attachment-full" alt="">
+          </a>
+        </swiper-slide>
+        <swiper-slide class="images-container pb-3">
+          <a href="#">
+            <img class="img-hov" loading="lazy" decoding="async" width="169" height="35" src="https://demo.casethemes.net/consultio/wp-content/uploads/2019/11/client-01.png" class="ct-thumb-1 attachment-full" alt="">
           </a>
         </swiper-slide>
       </swiper-container>
@@ -920,7 +922,7 @@
           </div>
         </div>
       </div>
-      <div class="scroll-top-container ">
+      <div class="scroll-top-container m-md-3 ">
         <a href="#" class="scroll-top">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
@@ -958,20 +960,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script>
-      function toggleMenu() {
-        var menuButton = document.querySelector(".btn-nav-mobile");
-        menuButton.classList.toggle("close-menu");
-      }
-
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+    <script>
+      const swiperEl = document.querySelector('swiper-container')
+      Object.assign(swiperEl, {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
         },
       });
-    </script> -->
+      swiperEl.initialize();
+    </script>
   </body>
 </html>
